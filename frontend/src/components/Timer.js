@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./Timer.css";
 
 const Timer = () => {
     const [time, setTime] = useState(1500); // 25 minutes in seconds
@@ -23,12 +24,12 @@ const Timer = () => {
     };
 
     return (
-        <div>
-            <h1>{formatTime(time)}</h1>
-            <button onClick={() => setIsActive(!isActive)}>
+        <div class="Center-Timer">
+            <h1 class="time-text">{formatTime(time)}</h1>
+            <button className="RoundButton buttonText" onClick={() => setIsActive(!isActive)}>
                 {isActive ? 'Pause' : 'Start'}
             </button>
-            <button onClick={() => setTime(1500)}>Reset</button>
+            <button className="RoundButton buttonText" onClick={() => setTime(1500)}>Reset</button>
         </div>
     );
 };
