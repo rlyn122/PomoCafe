@@ -7,7 +7,7 @@ html {
 }
 
 .App {
-    background-image: url("../public/loficafe.jpg");
+    background: url("../public/backgroundImg/studydog.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,10 +24,22 @@ html {
 }
 
 .ThemeAndTimer {
-    margin: 8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-self: center;
+    width: 67%;
+}
 
+.SpotifyAndTimer {
+    margin: 4rem;
+    display: flex;
+
+}
+
+.titleText {
+    color: white;
+}
+
+#SpotifyEmbed {
+    width: 33%;
 }

@@ -43,12 +43,12 @@ class FullScreenButton extends React.Component {
         };
 
         return (
-            <div class="button-container">
+            <div className="button-container">
 
-                <button onClick={this.enterFullscreen} class="Icon" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                <button onClick={this.enterFullscreen} className="Icon" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
                     <i className="fas fa-expand" style={iconStyle}></i>
                 </button>
-                <button onClick={this.exitFullscreen} class="Icon" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
+                <button onClick={this.exitFullscreen} className="Icon" style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
                     <i className="fas fa-compress" style={iconStyle}></i>
                 </button>
             </div>

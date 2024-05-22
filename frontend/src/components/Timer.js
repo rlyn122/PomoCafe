@@ -24,8 +24,8 @@ const Timer = () => {
     };
 
     return (
-        <div class="Center-Timer">
-            <h1 class="time-text">{formatTime(time)}</h1>
+        <div className="Center-Timer">
+            <h1 className="time-text">{formatTime(time)}</h1>
             <div className="TimerButtons">
                 <button className="RoundButton buttonText" onClick={() => setIsActive(!isActive)}>
                     {isActive ? 'Pause' : 'Start'}
