@@ -13,4 +13,21 @@ html {
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.FullScreenButton {
+    display: flex;
+    justify-content: flex-end;
+    /* x-axis*/
+}
+
+.ThemeAndTimer {
+    margin: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+
 }

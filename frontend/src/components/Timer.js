@@ -26,10 +26,12 @@ const Timer = () => {
     return (
         <div class="Center-Timer">
             <h1 class="time-text">{formatTime(time)}</h1>
-            <button className="RoundButton buttonText" onClick={() => setIsActive(!isActive)}>
-                {isActive ? 'Pause' : 'Start'}
-            </button>
-            <button className="RoundButton buttonText" onClick={() => setTime(1500)}>Reset</button>
+            <div className="TimerButtons">
+                <button className="RoundButton buttonText" onClick={() => setIsActive(!isActive)}>
+                    {isActive ? 'Pause' : 'Start'}
+                </button>
+                <button className="RoundButton buttonText" onClick={() => setTime(1500)}>Reset</button>
+            </div>
         </div>
     );
 };

@@ -12,7 +12,6 @@
     border-radius: 50px;
     transition: background-color 0.3s;
     border: 1px solid;
-    margin: auto;
 
 }
 
@@ -21,19 +20,7 @@
     border: 1px solid;
 }
 
-.time-text {
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 100px;
-    margin: auto;
-    padding: 50px;
-    color: white;
-}
+/* .Center-ThemeButtons {
+    text-align: center;
 
-.button-text {
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-.TimerButtons {
-    display: flex;
-    justify-content: center;
-}
+} */

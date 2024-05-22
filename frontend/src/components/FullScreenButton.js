@@ -31,7 +31,7 @@ class FullScreenButton extends React.Component {
             } else if (document.msExitFullscreen) {
                 document.msExitFullscreen();
             }
-        }   
+        }
     }
 
 
