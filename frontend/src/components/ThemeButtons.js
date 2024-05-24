@@ -3,7 +3,7 @@ function ThemeButtons() {
 
     function changeTheme(theme) {
         console.log("Theme changed to ", theme)
-        const App = document.querySelector(".App")
+        const App = document.querySelector(".Home")
         const theme1path = "url('/backgroundImg/loficafe.jpg')"
         const theme2path = "url('/backgroundImg/coffeshop.jpeg')"
         const theme3path = "url('/backgroundImg/studydog.webp')"
