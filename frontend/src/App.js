@@ -1,32 +1,25 @@
-import Timer from './components/Timer.js'
-import FullScreenButton from './components/FullScreenButton.js'
+import NavBar from "./components/Navbar/NavBar.js"
 import './App.css';
-import ThemeButtons from './components/ThemeButtons.js'
-import SpotifyEmbed from './components/SpotifyEmbed.js'
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import Home from './pages/Home.js'
+import Login from './pages/Login.js'
+import SignUp from './pages/SignUp.js'
+
 
 function App() {
   return (
-    <div className="App">
-
-      <div className="FullScreenButton">
-        <FullScreenButton />
-      </div>
-
-      <div className="SpotifyAndTimer">
-        <div id="SpotifyEmbed">
-          <SpotifyEmbed />
+    <>
+      <BrowserRouter>
+        <NavBar />
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+          </Routes>
         </div>
-        <div className='ThemeAndTimer'>
-          <h1 className="titleText">PomoCafe</h1>
-          <div className="ThemeButtons">
-            <ThemeButtons />
-          </div>
-          <div className="Timer">
-            <Timer />
-          </div>
-        </div>
-      </div>
-    </div>
+      </BrowserRouter>
+    </>
   );
 }
 
