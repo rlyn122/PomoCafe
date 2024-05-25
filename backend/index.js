@@ -1,11 +1,14 @@
-const express = require('express');
-const app = express();
-const port = process.env.PORT || 5000;
+const express = require('express')
+var cors = require('cors')
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
+// Initialize Express app
+const app = express()
 
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
-});
+// Set up CORS and JSON middlewares
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+app.get('/', (req, res) => { res.send("AuthAPI.") })
+
+app.listen(3080)
