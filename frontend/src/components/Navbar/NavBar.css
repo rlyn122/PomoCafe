@@ -1,0 +1,13 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-title {
+    justify-content: flex-start;
+
+}
+
+.Nav-Op {
+    justify-content: flex-end;
+}

@@ -1,4 +1,4 @@
-
+import "./NavBar.css"
 
 function NavBar() {
     return (
@@ -6,7 +6,7 @@ function NavBar() {
         <nav className='navBar'>
 
             <a href="/" className="site-title">PomoCafe</a>
-            <ul>
+            <ul className="NavOp">
                 <li><a href="/SignUp">SignUp</a></li>
                 <li><a href="/Login">Login</a></li>
             </ul>
