@@ -4,17 +4,22 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from './pages/Home.js'
 import Login from './pages/Login.js'
 import SignUp from './pages/SignUp.js'
+import { useEffect, useState } from 'react'
+
 
 
 function App() {
+
+  const [loggedIn, setLoggedIn] = useState(false)
+
   return (
     <>
       <BrowserRouter>
-        <NavBar />
+        <NavBar loggedIn={loggedIn} />
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
             <Route path="/signup" element={<SignUp />} />
           </Routes>
         </div>

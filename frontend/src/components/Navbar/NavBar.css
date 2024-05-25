@@ -10,4 +10,5 @@
 
 .Nav-Op {
     justify-content: flex-end;
+    display: flex;
 }

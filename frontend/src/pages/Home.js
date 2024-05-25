@@ -4,7 +4,8 @@ import FullScreenButton from '../components/FullScreenButton.js'
 import ThemeButtons from '../components/ThemeButtons.js'
 import SpotifyEmbed from '../components/SpotifyEmbed.js'
 
-function Home() {
+function Home(props) {
+
 
     return (
         <div className="Home">
